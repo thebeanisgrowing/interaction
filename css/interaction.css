@@ -163,6 +163,18 @@
     from {width: 0;}
     to {width: 40.3%;}
 }
+@keyframes move_slide {
+    from {transform: translateX(0);}
+    to {transform: translateX(-12.5%);}
+}
+@keyframes move_slide2 {
+    from {transform: translateX(0);}
+    to {transform: translateX(-375px);}
+}
+@keyframes move_slide3 {
+    from {transform: translateX(0);}
+    to {transform: translateX(-275px);}
+}
 /* 질문넘기기 */
 .questionMove {
     position: absolute;

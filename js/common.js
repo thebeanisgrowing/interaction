@@ -31,22 +31,11 @@ document.addEventListener("DOMContentLoaded", function(){
             } else {
                 document.getElementById("tobe").classList.remove("active");
             }
-
-            //팀 페럴렉스
-            if(window.scrollY>6000){
-                document.getElementById("making1").classList.add("active");
+            //목업화면 패럴랙스
+            if(window.scrollY>15300){
+                document.getElementById("wrap4").classList.add("active");
             } else {
-                document.getElementById("making1").classList.remove("active");
-            }
-            if(window.scrollY>6300){
-                document.getElementById("making2").classList.add("active");
-            } else {
-                document.getElementById("making2").classList.remove("active");
-            }
-            if(window.scrollY>6600){
-                document.getElementById("making3").classList.add("active");
-            } else {
-                document.getElementById("making3").classList.remove("active");
+                document.getElementById("wrap4").classList.remove("active");
             }
         }
     });
@@ -145,24 +134,8 @@ document.addEventListener("DOMContentLoaded", function(){
         });
     }
     //마우스 이벤트
-    //클릭하여 일정높이까지 올라오는 토글
-    document.getElementById("wrap4").onclick = function(){
-        document.getElementById("wrap4").classList.toggle("active");
-        //클릭하여 내용더보기
-        document.getElementById("community_introduce1").classList.add("active");
-        document.getElementById("community_introduce2").classList.add("active");
-        document.getElementById("community_introduce3").classList.add("active");
-    };
-
-    //이미지 토글을 이용하여 펼쳐보기
-    //클릭하여 이미지변환 토글
-    document.getElementById("calendar").onclick = function() {
-        document.getElementById("calendar").classList.toggle("active");
-        document.getElementById("calendar2").classList.toggle("active");
-        document.getElementById("move").classList.toggle("active");
-        //클릭하여 내용더보기
-        document.getElementById("challenge_introduce1").classList.add("active");
-        document.getElementById("challenge_introduce2").classList.add("active");
-        document.getElementById("challenge_introduce3").classList.add("active");
-    };
+    //일정높이까지 올라오는 토글
+    // document.getElementById("wrap4").onclick = function(){
+    //     document.getElementById("wrap4").classList.toggle("active");
+    // };
 });

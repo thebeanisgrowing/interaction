@@ -134,27 +134,33 @@ footer {
     bottom: 0px;
     left: 0px;
 
-    height: 700px;
+    height: 800px;
     color: #FFFFFF;
+    background-image: url('../img/footer_wave1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 footer #ending {
-    position: relative;
-    bottom: 0px;
-    left: 0px;
+    position: absolute;
+    width: 650px;
+    top: 30%;
+    left: 10%;
 
-    margin-top: 40%;
+    margin-top: 0px;
     font-family: 'Pretendard';
     font-style: normal;
     font-weight: 700;
     font-size: 60px;
 }
-footer #ending span {
+footer #ending .last {
     font-weight: 300;
     font-size: 40px;
     line-height: 48px;
 }
 footer #copyright {
-    margin-left: -10%;
+    position: absolute;
+    top: 30%;
+    left: 10%;
     margin-top: 15%;
 
     font-weight: 400;
