@@ -163,6 +163,7 @@
     from {width: 0;}
     to {width: 40.3%;}
 }
+/* 목업화면 슬라이드 */
 @keyframes move_slide {
     from {transform: translateX(0);}
     to {transform: translateX(-12.5%);}
@@ -280,4 +281,14 @@
     height: 237px;
     margin-left: 80px;
 }
-/* 질문보기 */
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-20%) translateZ(0) scaleY(0.95)
+    }
+    100% {
+        transform: translateX(-30%) translateZ(0) scaleY(1)
+    }
+}

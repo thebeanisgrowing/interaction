@@ -14,12 +14,12 @@ document.addEventListener("DOMContentLoaded", function(){
         window.onscroll = function(){
             console.log(window.scrollY);
             //말풍선 패럴렉스
-            if(window.scrollY>1800){
+            if(window.scrollY>1100){
                 document.getElementById("comment1").classList.add("active");
             } else {
                 document.getElementById("comment1").classList.remove("active");
             }
-            if(window.scrollY>2000){
+            if(window.scrollY>1100){
                 document.getElementById("comment2").classList.add("active");
             } else {
                 document.getElementById("comment2").classList.remove("active");

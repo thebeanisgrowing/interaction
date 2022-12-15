@@ -133,6 +133,7 @@ footer {
     position: relative;
     bottom: 0px;
     left: 0px;
+    overflow: hidden;
 
     height: 800px;
     color: #FFFFFF;
