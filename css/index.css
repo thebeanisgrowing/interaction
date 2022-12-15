@@ -1,0 +1,841 @@
+/* 첫번째 섹션 */
+.visual {
+    margin-top: 0%;
+
+    position: relative;
+    z-index: -5;
+    height: 3300px;
+    width: 100%;
+    background-image: url('../img/wave_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* 슬로건 */
+.visualgrid {
+    position: relative;
+    top: 200px;
+    margin-left: 200px;
+
+    display: flex;
+    justify-content: space-between;
+}
+.visual h2 {
+    width: 800px;
+    text-align: left;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 100px;
+
+    line-height: 120px;
+    color: #FFFFFF;
+}
+.visual h2 .first {
+    font-weight: 500;
+    font-size: 130px;
+
+    color: #ffd194;
+}
+.visual h2 .second {
+    font-weight: 500;
+    font-size: 100px;
+
+    color: #FFFFFF;
+}
+.visual h3 {
+    text-align: left;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+
+    margin-top: 15px;
+    margin-left: 10px;
+    letter-spacing: 0.04em;
+
+    color: #FFFFFF;
+}
+/* 앱스토어로 이동 */
+.visual ul {
+    display: flex;
+    list-style-type: none;
+}
+.visual .download{
+    margin-top: 40px;
+}
+.visual .download li{
+    margin-right: 10px;
+}
+/* 메인이미지 */
+.visual .mainimg {
+    position: relative;
+    text-align: right;
+    margin-top: -70px;
+    margin-right: 200px;
+
+    animation: ImageUpDown 1s ease-in-out 0s infinite alternate; 
+}
+.visual .mainimg img {
+    width: 100%;
+    height: auto;
+}
+/* overview1 */
+.commentgrid {
+    position: relative;
+    margin-top: 700px;
+    margin-left: 200px;
+    text-align: center;
+}
+.commentgrid .title {
+    font-family: 'Pretendard-Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+
+    color: #FF6F61;
+    text-align: left;
+}
+.commentgrid .comment {
+    margin-top: 200px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#comment1 {
+    width: 520px;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+#comment1.active {
+    margin-top: -100px;
+    opacity: 0;
+
+    transition: all 1s;
+}
+#comment2 {
+    width: 520px;
+    margin-right: 20%;
+    margin-top: 190px;
+}
+#comment2.active {
+    margin-top: -100px;
+    opacity: 0;
+
+    transition: 1s;
+}
+/* overview2 */
+#overview {
+    position: relative;
+    height: 1900px;
+    width: 100%;
+    margin-top: 200px;
+    margin-left: 200px;
+}
+#overview .q {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+
+    color: #000000;
+}
+#overview #q1 {
+    width: 900px;
+
+    margin-top: 160px;
+    margin-left: 15%;   
+    text-align: left;
+}
+#overview #q1 ul {
+    margin-top: 62px;
+}
+#overview #q1 ul li {
+    list-style-type: none;
+    padding-top: 17px;
+    padding-bottom: 21px;
+    padding-left: 52px;
+    margin-top: 22px;
+
+    border: solid 2px #FF6F61;
+    border-radius: 20px;
+}
+#overview #q1 ul .gray {
+    border: solid 2px #999999;
+}
+.list1 {
+    margin-bottom: 13px;
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+
+    color: #FF6F61;
+}
+#list1_per1 {
+    float: right;
+    margin-right: 52px;
+}
+#list1_per2 {
+    float: right;
+    margin-right: 52px;
+}
+.list2 {
+    margin-bottom: 13px;
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+
+    color: #000000
+}
+#list2_per1 {
+    float: right;
+    margin-right: 52px;
+}
+#list2_per2 {
+    float: right;
+    margin-right: 52px;
+}
+#overview #q1 #from {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+
+    margin-top: 12px;
+    margin-right: 5px;
+    text-align: right;
+
+    color: #000000;
+}
+#overview #q1 #from span {
+    color: #999999;
+}
+#overview #q2 {
+    margin-top: 137px;
+    margin-left: 15%;   
+    text-align: left;
+}
+#overview #q2 p {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+
+    margin-top: 41px;
+    margin-left: 47px;
+    color: #545454;
+}
+/* problem&solution */
+#problemSolution {
+    position: relative;
+    height: 1000px;
+    width: 100%;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+#problemSolution #solution {
+    text-align: left;
+    margin-top: 160px;
+    margin-left: 15%;
+}
+#tobe {
+    opacity: 0;
+}
+#tobe.active {
+    opacity: 100;
+    transition: all 2s;
+}
+/* servicepoint */
+#servicePoint {
+    height: 1800px;
+    width: 100%;
+    margin-top: 200px;
+    margin-left: 200px;
+}
+#servicePoint #team {
+    text-align: left;
+    width: auto;
+
+    margin-left: 10%;
+    margin-top: 200px;
+}
+#servicePoint #team img {
+    padding-bottom: 50px;
+}
+#servicePoint #team #team1 {
+    /* margin-top: -100px; */
+    opacity: 100;
+
+    transition: all 2s;
+}
+#servicePoint #team #team1.active {
+    margin-top: 0px;
+    opacity: 100;
+}
+#servicePoint #team #team2 {
+    /* margin-top: -100px; */
+    opacity: 100;
+
+    transition: all 2s;
+}
+#servicePoint #team #team2.active {
+    margin-top: 0px;
+    opacity: 100;
+}
+#servicePoint #team #team3 {
+    /* margin-top: -100px; */
+    opacity: 100;
+
+    transition: all 2s;
+}
+#servicePoint #team #team3.active {
+    margin-top: 0px;
+    opacity: 100;
+}
+/* promotion */
+/* promotion video */
+#promotion {
+    position: relative;
+    height: 2800px;
+    width: 100%;
+    padding-top: 10%;
+    background-image: url('../img/body_wave.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#promotion .video {
+    margin-left: 200px;
+}
+#promotion .video video {
+    width: 70%;
+    height: auto;
+
+    margin-left: 10%;
+    margin-top: 200px;
+}
+/* design detail */
+#promotion .detail {
+    margin-left: 200px;
+    margin-top: 200px;
+}
+#promotion .mockup {
+    width: 100%;
+    height: auto;
+
+    margin-top: 200px;
+}
+/* 서비스소개 */
+/* main service */
+#mainService {
+    position: relative;
+    height: 3300px;
+    width: 100%;
+
+    margin-left: 200px;
+    margin-top: 300px;
+}
+/* 테스트화면 설명 */
+#mainService .testpage {
+    position: relative;
+    display: flex;
+    height: 1500px;
+    margin-top: 50px;
+    margin-left: 20%;
+}
+#mainService .testpage .testStart {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-top: 200px;
+}
+#mainService .testpage .testStart .testIntro {
+    position: absolute;
+    width: 220px;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+
+    font-family: 'Pretendard-Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -2px;
+
+    color: #000000;
+}
+#mainService .testpage .testStart .testIntro strong {
+    font-weight: 700;
+    font-size: 36px;
+}
+#mainService .testpage .testStart .testIntro span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 38px;
+
+    text-align: center;
+    letter-spacing: -0.165px;
+    color: #999999;
+}
+#mainService .testpage .testStart .testImg {
+    position: absolute;
+    left: 0;
+    top: 100px;
+}
+#mainService .testpage .testStart .testButton {
+    position: relative;
+    left: 0;
+    top: 500px;
+}
+/* 질문목업화면 */
+#mainService .testpage .questionMockup {
+    position: absolute;
+    width: 395px;
+    height: 900px;
+    overflow: hidden;
+
+    left: 310px;
+    top: 0;
+    margin-left: 50px;
+}
+#mainService .testpage .mockupFrame {
+    position: absolute;
+    z-index: 3;
+    width: 470px;
+    height: 900px;
+    overflow: hidden;
+
+    left: 300px;
+    top: 0;
+    margin-left: 50px;
+}
+/* 첫번째 설명 */
+#mainService .testpage .testIntroduce1 {
+    position: absolute;
+    width: 270px;
+    height: auto;
+    left: -50px;
+    top: 0;
+
+    font-family: 'Pretendard-Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+
+    color: #636363;
+}
+#mainService .testpage .testIntroduce1 p {
+    margin-top: 15px;
+}
+#mainService .testpage .testIntroduce1 strong {
+    font-family: 'Pretendard-Regular';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+    text-align: right;
+
+    color: #FF6F61;
+}
+/* 두번째 설명 */
+#mainService .testpage .testIntroduce2 {
+    position: absolute;
+    width: 270px;
+    height: auto;
+    left: 440px;
+    top: 930px;
+
+    font-family: 'Pretendard-Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: left;
+
+    color: #636363;
+}
+#mainService .testpage .testIntroduce2 p {
+    margin-top: 15px;
+}
+#mainService .testpage .testIntroduce2 strong {
+    font-family: 'Pretendard-Regular';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+    text-align: left;
+
+    color: #FF6F61;
+}
+/* 홈화면 소개 */
+#homepage {
+    position: relative;
+    height: 1200px;
+    margin-top: 200px;
+
+    background-image: url("../img/home_main.png");
+    background-repeat: no-repeat;
+    text-align: left;
+}
+#homepage #wrap1 {
+    position: absolute;
+    width: 375px;
+    top: 500px;
+    left: 0px;
+    overflow: hidden;
+    margin-left: 28px;
+}
+#homepage #wrap1 ul {
+    list-style-type: none;
+    display: flex;
+    margin-left: 28px;
+}
+#homepage #wrap1 ul li {
+    margin-right: 10px;
+    border-radius: 5px;
+}
+#homepage #wrap1 ul li img {
+    box-shadow: 3px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+#homepage #wrap2 {
+    position: absolute;
+    width: 375px;
+    overflow: hidden;
+    top: 650px;
+    left: 28px;
+    
+    margin: 0px;
+}
+#homepage #wrap2 ul {
+    list-style-type: none;
+    display: flex;
+}
+/* 첫번째 설명 */
+#homepage .homeIntroduce1 {
+    position: absolute;
+    width: 340px;
+    height: auto;
+    left: 600px;
+    top: 200px;
+
+    font-family: 'Pretendard-Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: left;
+
+    color: #636363;
+}
+#homepage .homeIntroduce1 p {
+    margin-top: 15px;
+}
+#homepage .homeIntroduce1 strong {
+    font-family: 'Pretendard-Regular';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+    text-align: right;
+
+    color: #FF6F61;
+}
+/* 두번째 설명 */
+#homepage .homeIntroduce2 {
+    position: absolute;
+    width: 350px;
+    height: auto;
+    left: 650px;
+    top: 500px;
+
+    font-family: 'Pretendard-Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: left;
+
+    color: #636363;
+}
+#homepage .homeIntroduce2 p {
+    margin-top: 15px;
+}
+#homepage .homeIntroduce2 strong {
+    font-family: 'Pretendard-Regular';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+    text-align: right;
+
+    color: #FF6F61;
+}
+/* 세번째 설명 */
+#homepage .homeIntroduce3 {
+    position: absolute;
+    width: 300px;
+    height: auto;
+    left: 700px;
+    top: 700px;
+
+    font-family: 'Pretendard-Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: left;
+
+    color: #636363;
+}
+#homepage .homeIntroduce3 p {
+    margin-top: 15px;
+}
+#homepage .homeIntroduce3 strong {
+    font-family: 'Pretendard-Regular';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+    text-align: right;
+
+    color: #FF6F61;
+}
+#communtiypage {
+    position: relative;
+    left: 500px;
+    height: 1600px;
+    margin-top: 200px;
+
+    background-image: url("../img/community_main.png");
+    background-repeat: no-repeat;
+    text-align: right;
+}
+#communtiypage #wrap3 {
+    position: absolute;
+    display: flex;
+    top: 370px;
+    left: 97px;
+
+    overflow: hidden;
+    width: 375px;
+}
+#communtiypage #wrap3 ul {
+    margin-left: 22px;
+    list-style-type: none;
+    display: flex;
+}
+#communtiypage #wrap3 ul li {
+    margin-right: 14px;
+}
+#communtiypage #wrap3 ul li img {
+    filter: drop-shadow(3px 4px 7px rgba(0, 0, 0, 0.25));
+}
+#communtiypage #wrap3 aside {
+    position: absolute;
+    z-index: 3;
+
+    width: 65px;
+    height: 120px;
+    top: 0px;
+    left: 310px;
+}
+#communtiypage #wrap4 {
+    position: absolute;
+    z-index: 3;
+    width: 375px;
+    height: 520px;
+    left: 97px;
+    top: 499px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    background-image: url("../img/community_bg3.png");
+    background-repeat: no-repeat;
+
+    margin-top: 20px;
+    transition: all 1s;
+}
+#communtiypage #wrap4.active {
+    margin-top: -200px;
+    width: 375px;
+    height: 720px;
+}
+#communtiypage #wrap4 ul {
+    list-style-type: none;
+    position: absolute;
+    left: 30px;
+    top: 100px;
+}
+#communtiypage #wrap4 ul li {
+    list-style-type: none;
+    width: 325px;
+    height: 60px;
+
+    margin-top: 40px;
+}
+#communtiypage #wrap4 #community_list {
+    position: relative;
+    width: 40px;
+    height: 22px;
+    left: 26px;
+    top: 87px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 17px;
+
+    color: #000000;
+}
+#communtiypage #wrap4 #add {
+    position: relative;
+    left: 0px;
+    top: 75px;
+}
+#communtiypage #wrap4 #button {
+    position: relative;
+    z-index: 4;
+    left: -170px;
+    top: 65px;
+}
+#section12 p {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #636363;
+}
+#section12 p span {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+
+    color: #FF6F61;
+    padding-bottom: 10px;
+}
+#community_introduce1 {
+    position: relative;
+    top: -1140px;
+    left: 1120px;
+
+    text-align: left;
+
+    transition: all 1s;
+}
+#community_introduce2 {
+    position: relative;
+    top: -930px;
+    left: -1100px;
+
+    text-align: right;
+
+    transition: all 1s;
+}
+#community_introduce3 {
+    position: relative;
+    top: -160px;
+    left: 500px;
+
+    text-align: left;
+
+    transition: all 1s;
+}
+/* 첫번째 설명 */
+#communitypage .communityIntroduce1 {
+    position: absolute;
+    width: 340px;
+    height: auto;
+    left: 0px;
+    top: 0px;
+
+    font-family: 'Pretendard-Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: left;
+
+    color: #636363;
+}
+#communitypage .communityIntroduce1 p {
+    margin-top: 15px;
+}
+#communitypage .communityIntroduce1 strong {
+    font-family: 'Pretendard-Regular';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+    text-align: right;
+
+    color: #FF6F61;
+}
+/* 두번째 설명 */
+#communitypage .communityIntroduce2 {
+    position: absolute;
+    width: 350px;
+    height: auto;
+    left: 650px;
+    top: 500px;
+
+    font-family: 'Pretendard-Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: left;
+
+    color: #636363;
+}
+#communitypage .homeIntroduce2 p {
+    margin-top: 15px;
+}
+#communityepage .communityIntroduce2 strong {
+    font-family: 'Pretendard-Regular';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+    text-align: right;
+
+    color: #FF6F61;
+}
+/* 세번째 설명 */
+#communitypage .communityIntroduce3 {
+    position: absolute;
+    width: 300px;
+    height: auto;
+    left: 700px;
+    top: 700px;
+
+    font-family: 'Pretendard-Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: left;
+
+    color: #636363;
+}
+#communitypage .communityIntroduce3 p {
+    margin-top: 15px;
+}
+#communitypage .communityIntroduce3 strong {
+    font-family: 'Pretendard-Regular';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+    text-align: right;
+
+    color: #FF6F61;
+}

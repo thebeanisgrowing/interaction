@@ -1,0 +1,271 @@
+/* 메인비주얼 배경 */
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-20%) translateZ(0) scaleY(0.95)
+    }
+    100% {
+        transform: translateX(-30%) translateZ(0) scaleY(1)
+    }
+}
+.wave {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    left: 0px;
+    bottom: 0px;
+    overflow: hidden;
+}
+.wavebg {
+    position: absolute;
+    width: 100%;
+    height: 2000px;
+    left: 0px;
+    top: 0px;
+    overflow: hidden;
+}
+.waveTop {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 1825px;
+    left: 0px;
+    top: 0px;
+    background-image: url('../img/wave1.png');
+    overflow: hidden;
+}
+.waveMiddle {
+    position: absolute;
+    z-index: -4;
+    left: 0;
+    top: 550px;
+    width: 200%;
+    height: 100%;
+
+    transform-origin: center bottom;
+    background-position: 0 bottom;
+    background-image: url('../img/wave2.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+    animation: move_wave 10s linear infinite alternate;
+    overflow: hidden;
+}
+.waveBottom {
+    position: absolute;
+    z-index: -3;
+    left: 0;
+    bottom: 150px;
+    width: 200%;
+    height: 100%;
+
+    transform-origin: center bottom;
+    background-position: 0 bottom;
+    background-image: url('../img/wave3.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+    animation: move_wave 7s linear infinite alternate;
+    overflow: hidden;
+    opacity: 50%;
+}
+/* 메인이미지 플로팅 */
+@keyframes ImageUpDown {
+    0% {top: 0px;}
+    100% {top: 30px;}
+}    
+/* 움직이는 그래프 */
+#bar1 {
+    width: 799px; 
+    height: 11px;
+    background: #D9D9D9; 
+    border-radius: 15px; 
+    position: relative; 
+}
+#bar1::after {
+    content: ""; 
+    height: 11px; 
+    background-color: #FF6F61; 
+    border-radius: 15px; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    animation: bar1Move 4s forwards; z-index: 1;
+}
+@keyframes bar1Move {
+    from {width: 0;}
+    to {width: 82.2%;}
+}
+#bar2 {
+    width: 799px; 
+    height: 11px;
+    background: #D9D9D9; 
+    border-radius: 15px; 
+    position: relative; 
+}
+#bar2::after {
+    content: ""; 
+    height: 11px; 
+    background-color: #FF6F61; 
+    border-radius: 15px; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    animation: bar2Move 4s forwards; 
+    z-index: 1;
+}
+ @keyframes bar2Move {
+    from {width: 0;}
+    to {width: 70.2%;}
+}
+#bar3 {
+    width: 799px; 
+    height: 11px;
+    background: #D9D9D9; 
+    border-radius: 15px; 
+    position: relative; 
+}
+#bar3::after {
+    content: ""; 
+    height: 11px; 
+    background-color: #999999; 
+    border-radius: 15px; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    animation: bar3Move 4s forwards; 
+    z-index: 1;
+}
+@keyframes bar3Move {
+    from {width: 0;}
+    to {width: 71.3%;}
+}
+#bar4 {
+    width: 799px; 
+    height: 11px;
+    background: #D9D9D9; 
+    border-radius: 15px; 
+    position: relative; 
+}
+#bar4::after {
+    content: ""; 
+    height: 11px; 
+    background-color: #999999; 
+    border-radius: 15px; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    animation: bar4Move 4s forwards; 
+    z-index: 1;}
+@keyframes bar4Move {
+    from {width: 0;}
+    to {width: 40.3%;}
+}
+/* 질문넘기기 */
+.questionMove {
+    position: absolute;
+    z-index: 2;
+    width: 3000px;
+    height: 812px;
+    overflow: hidden;
+
+    left: 20px;
+    top: 20px;
+    background-image: url('../img/q_list.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    animation: move_mockup 24s ease-in-out infinite;
+}
+@keyframes move_mockup {
+    0% {
+        transform: translateX(0)
+    }
+    12.5% {
+        transform: translateX(-12.5%)
+    }
+    25% {
+        transform: translateX(-25%)
+    }
+    50% {
+        transform: translateX(-50%)
+    }
+    62.5% {
+        transform: translateX(-62.5%)
+    }
+    75% {
+        transform: translateX(-75%)
+    }
+    87.5% {
+        transform: translateX(-87.5%)
+    }
+}
+/* modal */
+.modal {
+    display:none;
+}
+.modal.active {
+    display:block;
+}
+.bg-shadow {
+    position: fixed;
+    z-index: 4;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    background:rgba(0, 0, 0, .8);
+}
+.modal .modal-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position:absolute;
+    z-index: 5;
+    top:15%;
+    left:25%;
+    transform: translate(-50%, -50%);
+    width:60%;
+    max-width:600px;
+}
+.modal .modal-box .modal-result {
+    background-color: #fff;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    text-align: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+}
+.modal .modal-box .modal-result h3 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 45px;
+
+    text-align: center;
+    letter-spacing: -0.165px;
+    color: #000000;
+}
+.modal .modal-box .modal-result p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 23px;
+
+    margin-top: 30px;
+    letter-spacing: -0.165px;
+    color: #404040;
+}
+#resultImg {
+    width: 375px;
+    height: 237px;
+    margin-left: 80px;
+}
+/* 질문보기 */
